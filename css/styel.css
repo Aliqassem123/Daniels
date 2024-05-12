@@ -1,0 +1,250 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+.fs-12{
+    font-size: 12px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.h-30{
+height: 50px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: "Montserrat", sans-serif;
+}
+:root{
+    font-size: 16px;
+--main-color:rgba(255, 255, 255);
+--bs-proggress-height: 2rem;
+
+}
+.w-10{
+    width: 10%;
+}
+.all-titel{
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight:900 ;
+    color:  rgb(52, 52, 52);
+    line-height: 44px;
+}
+/*======================header====================*/
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.title h2{
+    font-size: 60px;
+    font-weight: 200;
+    }
+.title span{
+font-size: 60px;
+font-weight: 400;
+}
+@media (max-width: 640px) { 
+    .title span{
+        font-size: 30px;
+    }
+    .title h2{
+        font-size: 30px;
+    }
+ }
+
+
+.navbar {
+ 
+
+--bs-navbar-brand-color: rgba(var(--main-color), 1);
+}
+.navbar-nav .nav-link.active {
+    color: var(--main-color);
+    --bs-navbar-active-color: rgba(var(--main-color), 1);
+}
+.nav-link {
+    color: var(--main-color);
+    --bs-nav-link-color: var(--main-color);
+}
+
+ .navbar-nav > li > a:after {
+    content: "";
+    text-align: center;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s;
+  
+}
+
+ .navbar-nav > li .active:after {
+    width: 100%;
+  }
+  
+  .socials i{
+    width: 30px;
+    height: 30px ;
+  }
+  
+
+
+
+/*======================abut====================*/
+.dots-img{
+    position: absolute;
+    top: 50%;
+    left: -30px;
+
+}
+
+  .progress{
+--bs-progress-height: 1.5rem!important;
+
+
+}
+.btn-dark{
+    --bs-btn-hover-color: #000 !important;
+    --bs-btn-hover-bg: #fff !important;
+}
+  
+  .progress-bar{
+    height: 100%;
+  }
+
+  /*======================Services.====================*/
+  .card-services i{
+    width: 70px;
+    height: 70px;
+  }
+  .card-services:hover i{
+background-color: black;
+color: #fff;
+
+  }
+
+
+
+
+
+/*======================Portfolio====================*/
+.carousel-indicators [data-bs-target]{
+  width: 10px !important;
+  height: 10px !important;
+}
+.list-portfolio > li > a:after {
+  content: "";
+  text-align: center;
+  width: 0%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s;
+
+}
+.list-portfolio > li > .active:after{
+  width: 100%;
+}
+  .icon-Portfolio i{
+width: 30px ;
+height:30px ;
+background-color: #000;
+color: #fff;
+
+  }
+  .icon-Portfolio i:hover{
+    background-color: #fff;
+color: #000;
+  }
+  .icon-Portfolio i, p{
+    transform: translatey(-20px);
+    transition: transform 2s ;
+  }
+  .Portfolio-item:hover .icon-Portfolio i, p{
+    transform: translatey(0%);
+  }
+
+  .layout{
+    position: absolute;
+    top: 7px;
+    bottom: 7px;
+    left: 7px;
+    right: 7px;
+    transform: translatey(110%);
+    transition:  .5s linear;
+  }
+
+
+  .Portfolio-item:hover .layout{
+    transform: translatey(0%);
+  
+  }
+
+
+/*======================Our Team.====================*/
+
+
+  .layout-team i{
+    
+    width: 30px;
+    height: 30px;
+    background: #000;
+     color: #fff;
+     transition: 0.5s;
+  }
+
+.layout-team i:hover{
+background: #fff;
+color: #000;
+}
+  .layout-team{
+    position: absolute;
+    top: 7px;
+    bottom: 7px;
+    left: 7px;
+    right: 7px;
+    opacity: 0;
+    transition: 0.5s;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+  }
+
+  .our-team-item:hover .layout-team{
+    transform: rotateY(0deg) scale(1, 1);
+    cursor: pointer;
+    opacity: 1;
+  
+  }
+  .our-team-item img{
+    transform: scale(1);
+    transition: 1s;
+  }
+  .our-team-item:hover img{
+    transform: scale(1.1);
+  }
+ 
+
+ 
+
+  /*======================Contact Us.====================*/
+
+
+  .card-Contact i{
+    width: 50px;
+    height: 50px;
+    background-color: #fcf7f7;
+    transition: .5s;
+  }
+  .card-Contact :hover i{
+    background-color: #000;
+    color: #fff;
+  }
+  
